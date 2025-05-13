@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVO CITY Pvt Ltd - Grow Together</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      background: #f8fafc;
+      color: #22223b;
+      overflow-x: hidden;
+    }
+    header {
+      background: #2a9d8f;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: slideDown 1s ease forwards;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeIn 2s ease 1s forwards;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffd166;
+    }
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: #e9c46a;
+      color: #22223b;
+      animation: fadeIn 2s ease 1.5s forwards;
+      opacity: 0;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      animation: slideInLeft 1s ease forwards;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      animation: slideInRight 1s ease forwards;
+    }
+    .cta-btn {
+      background: #2a9d8f;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.3s;
+      animation: fadeIn 2s ease 2s forwards;
+      opacity: 0;
+    }
+    .cta-btn:hover {
+      background: #264653;
+      transform: scale(1.05);
+    }
+    .features, .testimonials, .contact {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .features {
+      animation-delay: 2.5s;
+    }
+    .testimonials {
+      animation-delay: 3s;
+    }
+    .contact {
+      animation-delay: 3.5s;
+    }
+    .features h2, .testimonials h2, .contact h2 {
+      color: #2a9d8f;
+      margin-bottom: 1rem;
+    }
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-around;
+    }
+    .feature {
+      flex: 1 1 200px;
+      background: #f1faee;
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .testimonials blockquote {
+      font-style: italic;
+      color: #555;
+      margin: 1rem 0;
+      border-left: 4px solid #2a9d8f;
+      padding-left: 1rem;
+      animation: fadeIn 1s ease forwards;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 600px) {
+      .features-list {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes slideDown {
+      0% { transform: translateY(-100%); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes slideInLeft {
+      0% { transform: translateX(-100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideInRight {
+      0% { transform: translateX(100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>IVO CITY Pvt Ltd</h1>
+    <p>Where we grow together</p>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Start Your Investment Journey Today</h1>
+    <p>Join a trusted group and invest in real business projects from as little as $20. Open to individuals, schools, churches, and entrepreneurs of all ages and income levels.</p>
+    <a href="Get Started.html" class="cta-btn">Get Started</a>
+
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Choose IVO CITY?</h2>
+    <div class="features-list">
+      <div class="feature">
+        <h3>Low Entry Barrier</h3>
+        <p>Invest from as little as $20 or $50 and become a business owner today.</p>
+      </div>
+      <div class="feature">
+        <h3>Inclusive & Transparent</h3>
+        <p>Open to all age groups and backgrounds, with clear, honest processes.</p>
+      </div>
+      <div class="feature">
+        <h3>Tailored Projects</h3>
+        <p>Choose projects that match your investment level and interests.</p>
+      </div>
+      <div class="feature">
+        <h3>Real Business Tasks</h3>
+        <p>Participate in tangible, operational projects with real returns.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Investors Say</h2>
+    <blockquote>
+      "IVO CITY made it possible for me to start investing with just $50. The process was transparent and the returns exceeded my expectations!"
+    </blockquote>
+    <blockquote>
+      "As a local entrepreneur, I brought my idea and received the capital I needed. We truly grow together at IVO CITY."
+    </blockquote>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>📞 +263 715 256 747</p>
+      <p>📞 +263 777 221 162</p>
+      <p>Email: info@ivocity.com</p>
+      <p>Ready to invest or have a business idea? Reach out and let's grow together!</p>
+    </div>
+  </section>
+</body>
+</html>
